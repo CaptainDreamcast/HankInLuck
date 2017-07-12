@@ -1,1 +1,4 @@
-OBJS = main.o 
+OBJS = main.o bg.o box.o boxgenerator.o collision.o congratsscreen.o door.o enemyhandler.o \
+finalboss.o gamelogic.o gameover.o hank.o horseguy.o narrator.o pirate.o screen1.o screen2.o \
+screen3.o screen4.o screen5.o screen6.o screen7.o screen8.o scrolling.o smashscreen.o \
+titlescreen.o

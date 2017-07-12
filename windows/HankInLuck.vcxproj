@@ -126,9 +126,59 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\bg.c" />
+    <ClCompile Include="..\box.c" />
+    <ClCompile Include="..\boxgenerator.c" />
+    <ClCompile Include="..\collision.c" />
+    <ClCompile Include="..\congratsscreen.c" />
+    <ClCompile Include="..\door.c" />
+    <ClCompile Include="..\enemyhandler.c" />
+    <ClCompile Include="..\finalboss.c" />
+    <ClCompile Include="..\gamelogic.c" />
+    <ClCompile Include="..\gameover.c" />
+    <ClCompile Include="..\hank.c" />
+    <ClCompile Include="..\horseguy.c" />
     <ClCompile Include="..\main.c" />
+    <ClCompile Include="..\narrator.c" />
+    <ClCompile Include="..\pirate.c" />
+    <ClCompile Include="..\screen1.c" />
+    <ClCompile Include="..\screen2.c" />
+    <ClCompile Include="..\screen3.c" />
+    <ClCompile Include="..\screen4.c" />
+    <ClCompile Include="..\screen5.c" />
+    <ClCompile Include="..\screen6.c" />
+    <ClCompile Include="..\screen7.c" />
+    <ClCompile Include="..\screen8.c" />
+    <ClCompile Include="..\scrolling.c" />
+    <ClCompile Include="..\smashscreen.c" />
+    <ClCompile Include="..\titlescreen.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\bg.h" />
+    <ClInclude Include="..\box.h" />
+    <ClInclude Include="..\boxgenerator.h" />
+    <ClInclude Include="..\collision.h" />
+    <ClInclude Include="..\congratsscreen.h" />
+    <ClInclude Include="..\door.h" />
+    <ClInclude Include="..\enemyhandler.h" />
+    <ClInclude Include="..\finalboss.h" />
+    <ClInclude Include="..\gamelogic.h" />
+    <ClInclude Include="..\gameover.h" />
+    <ClInclude Include="..\hank.h" />
+    <ClInclude Include="..\horseguy.h" />
+    <ClInclude Include="..\narrator.h" />
+    <ClInclude Include="..\pirate.h" />
+    <ClInclude Include="..\screen1.h" />
+    <ClInclude Include="..\screen2.h" />
+    <ClInclude Include="..\screen3.h" />
+    <ClInclude Include="..\screen4.h" />
+    <ClInclude Include="..\screen5.h" />
+    <ClInclude Include="..\screen6.h" />
+    <ClInclude Include="..\screen7.h" />
+    <ClInclude Include="..\screen8.h" />
+    <ClInclude Include="..\scrolling.h" />
+    <ClInclude Include="..\smashscreen.h" />
+    <ClInclude Include="..\titlescreen.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="resource1.h" />
   </ItemGroup>

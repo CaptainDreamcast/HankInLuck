@@ -8,6 +8,17 @@
 #include <tari/system.h>
 #include <tari/stagehandler.h>
 #include <tari/logoscreen.h>
+#include <tari/collisionhandler.h>
+
+#include "titlescreen.h"
+#include "screen1.h"
+#include "screen3.h"
+#include "screen4.h"
+#include "screen5.h"
+#include "screen6.h"
+#include "screen7.h"
+#include "screen8.h"
+#include "congratsscreen.h"
 
 #ifdef DREAMCAST
 KOS_INIT_FLAGS(INIT_DEFAULT);
@@ -52,8 +63,9 @@ int main(int argc, char** argv) {
 	}
 
 	setMainFileSystem();
-	
-	setScreenAfterWrapperLogoScreen(getLogoScreenFromWrapper());
+
+	setStageHandlerNoDelayedLoading();
+	setScreenAfterWrapperLogoScreen(&TitleScreen);
 	startScreenHandling(getLogoScreenFromWrapper());
 
 	exitGame();
