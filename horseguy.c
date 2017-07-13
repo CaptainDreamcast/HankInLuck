@@ -34,6 +34,8 @@ static void loadHorseGuy(void* tData) {
 
 
 static void hasBeenHit(void* tCaller, void* tCollisionData) {
+	(void)tCaller;
+	(void)tCollisionData;
 	moveToNextScreen();
 }
 

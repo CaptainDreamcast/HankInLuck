@@ -16,6 +16,7 @@
 
 
 static void levelOver(void* tCaller) {
+	(void)tCaller;
 	moveToNextScreen();
 }
 

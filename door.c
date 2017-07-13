@@ -14,6 +14,7 @@ static struct {
 } gData;
 
 static void loadDoor(void* tData) {
+	(void)tData;
 	gData.mTexture = loadTexture("assets/sprites/DOOR.pkg");
 	gData.mAnimation = playOneFrameAnimationLoop(makePosition(20, 105, 5), &gData.mTexture);
 	gData.mKnockNow = 0;
@@ -22,12 +23,15 @@ static void loadDoor(void* tData) {
 }
 
 static void unloadDoor(void* tData) {
+	(void)tData;
 	removeHandledAnimation(gData.mAnimation);
 }
 
 
 
 static void updateDoor(void* tData) {
+	(void)tData;
+
 	setAnimationScale(gData.mAnimation, makePosition(gData.mScale, gData.mScale, 1), makePosition(32, 128, 0));
 
 	if (handleDurationAndCheckIfOver(&gData.mKnockNow, gData.mKnockDuration)) {

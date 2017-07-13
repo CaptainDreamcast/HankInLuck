@@ -11,6 +11,7 @@ static struct {
 } gData;
 
 static void loadScrollingBG(void* tData) {
+	(void)tData;
 	gData.mLayer = addScrollingBackground(1, 1);
 
 	char path[1024];
@@ -22,7 +23,8 @@ static void loadScrollingBG(void* tData) {
 	setScrollingBackgroundMaxVelocity(gData.mLayer, 10);
 }
 
-static void updateScrollingBG(void* tDaat) {
+static void updateScrollingBG(void* tData) {
+	(void)tData;
 	scrollBackgroundRight(1);
 
 	Position p = *getScrollingBackgroundPositionReference(gData.mLayer);

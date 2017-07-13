@@ -15,6 +15,7 @@
 #include "titlescreen.h"
 
 static void levelOver(void* tCaller) {
+	(void)tCaller;
 	moveToNextScreen();
 }
 

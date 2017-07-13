@@ -32,6 +32,7 @@ typedef struct {
 } FinalBoss;
 
 static void finalBossWasHit(void* tCaller, void* tCollisionData) {
+	(void)tCollisionData;
 	FinalBoss* e = tCaller;
 	
 	removeActor(e->mActor);

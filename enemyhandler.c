@@ -21,6 +21,7 @@ static void letPiratesIn(void* tCaller) {
 }
 
 static void loadEnemyHandler(void* tData) {
+	(void)tData;
 	gData.mDoor = instantiateActor(DoorBP);
 	gData.mIsGeneratingPirates = 0;
 	gData.mGenerateDuration = 31;
@@ -31,6 +32,8 @@ static void loadEnemyHandler(void* tData) {
 }
 
 static void updateEnemyHandler(void* tData) {
+	(void)tData;
+
 	if (!gData.mIsGeneratingPirates) return;
 
 	if (handleDurationAndCheckIfOver(&gData.mGenerateNow, gData.mGenerateDuration)) {

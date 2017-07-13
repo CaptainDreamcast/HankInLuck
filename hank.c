@@ -46,6 +46,7 @@ static struct {
 static void hasBeenHit(void* tCaller, void* tCollisionData);
 
 static void loadHank(void* tData) {
+	(void)tData;
 	char path[1024];
 
 	sprintf(path, "assets/sprites/HANK_%s.pkg", gData.mCurrentName);
@@ -104,9 +105,13 @@ static void loadHank(void* tData) {
 }
 
 static void hasHit(void* tCaller, void* tCollisionData) {
+	(void)tCaller;
+	(void)tCollisionData;
 }
 
 static void hasBeenHit(void* tCaller, void* tCollisionData) {
+	(void)tCaller;
+	(void)tCollisionData;
 	setNewScreen(&GameOverScreen);
 }
 
@@ -196,7 +201,7 @@ static void updateZ() {
 }
 
 static void updateHank(void* tData) {
-
+	(void)tData;
 	confineHank();
 	updateZ();
 	checkVictoryCondition();

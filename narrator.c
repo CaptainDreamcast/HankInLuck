@@ -26,6 +26,7 @@ static void displayNarration() {
 }
 
 static void loadNarrator(void* tData) {
+	(void)tData;
 	gData.mBG = loadTexture("assets/sprites/WHITE.pkg");
 	gData.mBGID = playOneFrameAnimationLoop(makePosition(0, 380, 10), &gData.mBG);
 	setAnimationSize(gData.mBGID, makePosition(640, 100, 1), makePosition(0, 0, 0));
@@ -36,6 +37,7 @@ static void loadNarrator(void* tData) {
 }
 
 static void unloadNarrator(void* tData) {
+	(void)tData;
 	gData.mIsDisplayingText = 0;
 }
 

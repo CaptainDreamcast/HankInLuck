@@ -33,6 +33,7 @@ static char gNarrations[6][1024] = {
 };
 
 static void setNextNarration(void* tCaller) {
+	(void)tCaller;
 	if (gData.mCurrent == gData.mNarrationAmount) {
 		setNewScreen(&TitleScreen);
 	}
